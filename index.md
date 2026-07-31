@@ -10,7 +10,7 @@ Welcome — I'm JP (hexenesi). This is a small personal site hosted with GitHub 
 A short bio: I build things, tinker with projects, and share notes here.
 
 - 🔭 I’m working on: sample project placeholders
-- 📫 Contact: [email me](mailto:jp@example.com)
+- 📫 Contact: [email me](mailto:hexenesi@gmail.com)
 
 ## Quick links
 
