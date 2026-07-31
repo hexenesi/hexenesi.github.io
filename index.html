@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan P. Cazarez (hexenesi) — Software & Systems Engineer</title>
+  <meta name="description" content="Personal portfolio and project showcase of Juan P. Cazarez (hexenesi). Systems programming, Python, C/C++, Java, and web applications.">
+  <meta property="og:title" content="Juan P. Cazarez (hexenesi) — Portfolio">
+  <meta property="og:description" content="Projects in C++, Python, Java, and modern web development.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Background Decorative Ambient Glows -->
+  <div class="glow-bg glow-bg-1"></div>
+  <div class="glow-bg glow-bg-2"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <span class="brand-accent">&lt;</span>hexenesi<span class="brand-accent"> /&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <a href="https://github.com/hexenesi" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline nav-github-btn">
+        <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+        GitHub Profile
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            Building software &amp; exploring algorithms
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Juan P. Cazarez</span>
+          </h1>
+          <p class="hero-subtitle">
+            Software engineer &amp; developer focused on performance, graphics programming, systems code, and clean application architecture.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore Projects
+              <svg class="icon-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-card glass-panel">
+          <div class="terminal-header">
+            <span class="terminal-btn btn-red"></span>
+            <span class="terminal-btn btn-yellow"></span>
+            <span class="terminal-btn btn-green"></span>
+            <span class="terminal-title">hexenesi@dev:~</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> cat profile.json</p>
+            <pre class="code-block"><code>{
+  <span class="key">"name"</span>: <span class="str">"Juan P. Cazarez"</span>,
+  <span class="key">"handle"</span>: <span class="str">"hexenesi"</span>,
+  <span class="key">"focus"</span>: [<span class="str">"Systems Programming"</span>, <span class="str">"Fractals/Graphics"</span>, <span class="str">"Full-stack Web"</span>],
+  <span class="key">"languages"</span>: [<span class="str">"C++"</span>, <span class="str">"C"</span>, <span class="str">"Python"</span>, <span class="str">"Java"</span>, <span class="str">"JavaScript"</span>],
+  <span class="key">"status"</span>: <span class="str">"Always building &amp; learning"</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// BIOGRAPHY</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text glass-panel">
+            <p>
+              I'm a passionate software developer who enjoys tinkering with low-level systems, mathematical visualizations (like Mandelbrot fractals), and building robust full-stack web applications.
+            </p>
+            <p>
+              Whether it's optimizing C++ loops, crafting Python utilities, architecting Django backends, or designing responsive frontends, I strive for efficiency, clarity, and thoughtful design.
+            </p>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card glass-panel">
+              <span class="stat-number">7+</span>
+              <span class="stat-label">Public Repositories</span>
+            </div>
+            <div class="stat-card glass-panel">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Languages Mastered</span>
+            </div>
+            <div class="stat-card glass-panel">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Open Source Passion</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// PORTFOLIO</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">A selection of repositories and experiments I've built.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Mandelbrot C++ -->
+          <article class="project-card glass-panel">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--accent-cyan)" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hexenesi/mandelbrot_c" target="_blank" rel="noopener noreferrer" title="View Source Code">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Mandelbrot C++ Renderer</h3>
+            <p class="project-desc">
+              High-performance C++ implementation for computing and rendering the Mandelbrot fractal set with color mappings and complex number math.
+            </p>
+            <div class="project-tags">
+              <span class="tag lang-cpp">C++</span>
+              <span class="tag">Graphics</span>
+              <span class="tag">Fractals</span>
+              <span class="tag">Algorithms</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Mandelbrot Python -->
+          <article class="project-card glass-panel">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--accent-purple)" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hexenesi/mandelbrot" target="_blank" rel="noopener noreferrer" title="View Source Code">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Mandelbrot Explorer</h3>
+            <p class="project-desc">
+              Python-based fractal exploration tool for generating custom color palettes and visualizing set boundaries dynamically.
+            </p>
+            <div class="project-tags">
+              <span class="tag lang-python">Python</span>
+              <span class="tag">Math</span>
+              <span class="tag">Visualization</span>
+            </div>
+          </article>
+
+          <!-- Project 3: ASCII Art Generator -->
+          <article class="project-card glass-panel">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--accent-blue)" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hexenesi/asciiart" target="_blank" rel="noopener noreferrer" title="View Source Code">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">ASCII Art Generator</h3>
+            <p class="project-desc">
+              Lightweight C program that parses image inputs and renders stylized ASCII character maps for terminal and text displays.
+            </p>
+            <div class="project-tags">
+              <span class="tag lang-c">C</span>
+              <span class="tag">CLI</span>
+              <span class="tag">Image Processing</span>
+            </div>
+          </article>
+
+          <!-- Project 4: ImageThumbnailer -->
+          <article class="project-card glass-panel">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--accent-orange)" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hexenesi/ImageThumbnailer" target="_blank" rel="noopener noreferrer" title="View Source Code">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Image Thumbnailer CLI</h3>
+            <p class="project-desc">
+              Command line tool built in Java for fast image resizing, scaling, and batch thumbnail production.
+            </p>
+            <div class="project-tags">
+              <span class="tag lang-java">Java</span>
+              <span class="tag">Batch Processing</span>
+              <span class="tag">CLI Tool</span>
+            </div>
+          </article>
+
+          <!-- Project 5: HexeFlick -->
+          <article class="project-card glass-panel">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--accent-pink)" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/hexenesi/HexeFlick" target="_blank" rel="noopener noreferrer" title="View Source Code">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">HexeFlick Android App</h3>
+            <p class="project-desc">
+              Android application exploring Flickr REST API integration, image fetching, and custom list views.
+            </p>
+            <div class="project-tags">
+              <span class="tag lang-java">Java</span>
+              <span class="tag">Android</span>
+              <span class="tag">REST API</span>
+            </div>
+          </article>
+
+          <!-- Project 6: Optica Project (Current Work) -->
+          <article class="project-card glass-panel featured-border">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--accent-green)" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+              <span class="featured-tag">Active Project</span>
+            </div>
+            <h3 class="project-title">Optica Store &amp; Inventory Suite</h3>
+            <p class="project-desc">
+              Modern optical business management platform featuring REST APIs built with Django Ninja, customer tracking, sales, and real-time inventory management.
+            </p>
+            <div class="project-tags">
+              <span class="tag lang-python">Python</span>
+              <span class="tag">Django Ninja</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">SQLite/PostgreSQL</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// TECH STACK</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category glass-panel">
+            <h3 class="category-title">Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-badge">C++</span>
+              <span class="skill-badge">C</span>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">HTML5 / CSS3</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-panel">
+            <h3 class="category-title">Frameworks &amp; Web</h3>
+            <div class="skill-tags">
+              <span class="skill-badge">Django / Django Ninja</span>
+              <span class="skill-badge">RESTful APIs</span>
+              <span class="skill-badge">Jekyll</span>
+              <span class="skill-badge">Android SDK</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-panel">
+            <h3 class="category-title">Tools &amp; Environments</h3>
+            <div class="skill-tags">
+              <span class="skill-badge">Git &amp; GitHub</span>
+              <span class="skill-badge">Linux (Bash/Shell)</span>
+              <span class="skill-badge">Make / Build Tools</span>
+              <span class="skill-badge">GCC / G++</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-box glass-panel text-center">
+          <span class="section-tag">// CONNECT</span>
+          <h2 class="section-title">Let's Build Something Together</h2>
+          <p class="contact-desc">
+            Have a project idea, question, or just want to connect? Reach out via email or find me on GitHub.
+          </p>
+
+          <div class="contact-buttons">
+            <a href="mailto:hexenesi@gmail.com" class="btn btn-primary btn-lg">
+              <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              hexenesi@gmail.com
+            </a>
+            <a href="https://github.com/hexenesi" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+              <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub / hexenesi
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="year"></span> Juan P. Cazarez (hexenesi). Hosted on GitHub Pages.</p>
+      <a href="#" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
