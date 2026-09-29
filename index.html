@@ -18,6 +18,8 @@
 </head>
 <body>
 
+  <div class="scroll-progress" id="scroll-progress"></div>
+
   <!-- Background Decorative Ambient Glows -->
   <div class="glow-bg glow-bg-1"></div>
   <div class="glow-bg glow-bg-2"></div>
@@ -28,6 +30,12 @@
       <a href="#" class="brand-logo">
         <span class="brand-accent">&lt;</span>hexenesi<span class="brand-accent"> /&gt;</span>
       </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
 
       <nav class="nav-links" id="nav-links">
         <a href="#about" class="nav-link">About</a>
@@ -109,16 +117,16 @@
 
           <div class="about-stats">
             <div class="stat-card glass-panel">
-              <span class="stat-number">7+</span>
+              <span class="stat-number">6</span>
               <span class="stat-label">Public Repositories</span>
             </div>
             <div class="stat-card glass-panel">
-              <span class="stat-number">5+</span>
-              <span class="stat-label">Languages Mastered</span>
+              <span class="stat-number">5</span>
+              <span class="stat-label">Languages Used</span>
             </div>
             <div class="stat-card glass-panel">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Open Source Passion</span>
+              <span class="stat-number">C++</span>
+              <span class="stat-label">Most Used Language</span>
             </div>
           </div>
         </div>
@@ -160,7 +168,11 @@
               <span class="tag">Fractals</span>
               <span class="tag">Algorithms</span>
             </div>
-          </article>
+                      <div class="project-meta">
+              <span class="project-meta-item"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 .587l3.668 7.431 8.207 1.193-5.938 5.787 1.402 8.168L12 19.021l-7.339 3.845 1.402-8.168L.125 9.211l8.207-1.193z"/></svg>1</span>
+              <span class="project-meta-item">Updated Jun 2026</span>
+            </div>
+</article>
 
           <!-- Project 2: Mandelbrot Python -->
           <article class="project-card glass-panel">
@@ -185,7 +197,10 @@
               <span class="tag">Math</span>
               <span class="tag">Visualization</span>
             </div>
-          </article>
+                      <div class="project-meta">
+              <span class="project-meta-item">Updated Jun 2026</span>
+            </div>
+</article>
 
           <!-- Project 3: ASCII Art Generator -->
           <article class="project-card glass-panel">
@@ -203,14 +218,17 @@
             </div>
             <h3 class="project-title">ASCII Art Generator</h3>
             <p class="project-desc">
-              Lightweight C program that parses image inputs and renders stylized ASCII character maps for terminal and text displays.
+              Lightweight C++ program that parses image inputs and renders stylized ASCII character maps for terminal and text displays.
             </p>
             <div class="project-tags">
-              <span class="tag lang-c">C</span>
+              <span class="tag lang-cpp">C++</span>
               <span class="tag">CLI</span>
               <span class="tag">Image Processing</span>
             </div>
-          </article>
+                      <div class="project-meta">
+              <span class="project-meta-item">Updated Sep 2026</span>
+            </div>
+</article>
 
           <!-- Project 4: ImageThumbnailer -->
           <article class="project-card glass-panel">
@@ -235,7 +253,10 @@
               <span class="tag">Batch Processing</span>
               <span class="tag">CLI Tool</span>
             </div>
-          </article>
+                      <div class="project-meta">
+              <span class="project-meta-item">Updated Apr 2026</span>
+            </div>
+</article>
 
           <!-- Project 5: HexeFlick -->
           <article class="project-card glass-panel">
@@ -260,7 +281,10 @@
               <span class="tag">Android</span>
               <span class="tag">REST API</span>
             </div>
-          </article>
+                      <div class="project-meta">
+              <span class="project-meta-item">Updated Aug 2017</span>
+            </div>
+</article>
 
           <!-- Project 6: Optica Project (Current Work) -->
           <article class="project-card glass-panel featured-border">
@@ -281,6 +305,9 @@
               <span class="tag">Django Ninja</span>
               <span class="tag">HTML/CSS</span>
               <span class="tag">SQLite/PostgreSQL</span>
+            </div>
+            <div class="project-meta">
+              <span class="project-meta-item">Private repository &middot; in development</span>
             </div>
           </article>
 
@@ -349,7 +376,7 @@
             </a>
             <a href="https://github.com/hexenesi" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
               <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
               </svg>
               GitHub / hexenesi
             </a>
@@ -369,6 +396,70 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile navigation toggle
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
+      var links = document.getElementById('nav-links');
+      if (!toggle || !links) return;
+
+      function setOpen(open) {
+        links.classList.toggle('is-open', open);
+        toggle.classList.toggle('is-active', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+
+      toggle.addEventListener('click', function () {
+        setOpen(!links.classList.contains('is-open'));
+      });
+
+      links.addEventListener('click', function (e) {
+        if (e.target.closest('.nav-link')) setOpen(false);
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
+
+    // Scroll progress indicator
+    (function () {
+      var bar = document.getElementById('scroll-progress');
+      if (!bar) return;
+      var ticking = false;
+
+      function update() {
+        var max = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = max > 0 ? (window.scrollY / max) * 100 : 0;
+        bar.style.width = pct + '%';
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) { ticking = true; requestAnimationFrame(update); }
+      }, { passive: true });
+      update();
+    })();
+
+    // Reveal sections on scroll (skipped when reduced motion is preferred)
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var targets = document.querySelectorAll('.section, .hero-card');
+      if (reduce || !('IntersectionObserver' in window)) return;
+
+      targets.forEach(function (el) { el.classList.add('reveal'); });
+
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+
+      targets.forEach(function (el) { io.observe(el); });
+    })();
   </script>
 </body>
 </html>
