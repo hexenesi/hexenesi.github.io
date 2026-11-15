@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -106,12 +109,13 @@
             <p class="work-desc">
               Escape-time renderer for the Mandelbrot set with smooth iteration coloring and complex-number math written for speed.
             </p>
+            {% assign repo = site.data.github.repos["mandelbrot_c"] %}
             <div class="work-meta">
-              <span class="lang lang-cpp">C++</span>
+              <span class="lang lang-cpp">{{ repo.language | default: "C++" }}</span>
+              {% if repo.stars and repo.stars > 0 %}<span class="sep">/</span>
+              <span>{{ repo.stars }} star{% if repo.stars > 1 %}s{% endif %}</span>{% endif %}
               <span class="sep">/</span>
-              <span>1 star</span>
-              <span class="sep">/</span>
-              <span>Jun 2026</span>
+              <span>{{ repo.pushed_label | default: "Jun 2026" }}</span>
             </div>
           </article>
 
@@ -127,10 +131,11 @@
             <p class="work-desc">
               Python counterpart for exploring the set interactively: custom color palettes and boundary visualization at arbitrary zoom.
             </p>
+            {% assign repo = site.data.github.repos["mandelbrot"] %}
             <div class="work-meta">
-              <span class="lang lang-python">Python</span>
+              <span class="lang lang-python">{{ repo.language | default: "Python" }}</span>
               <span class="sep">/</span>
-              <span>Jun 2026</span>
+              <span>{{ repo.pushed_label | default: "Jun 2026" }}</span>
             </div>
           </article>
 
@@ -146,10 +151,11 @@
             <p class="work-desc">
               C++ tool that samples image luminance and maps it onto a character ramp for terminal and text output.
             </p>
+            {% assign repo = site.data.github.repos["asciiart"] %}
             <div class="work-meta">
-              <span class="lang lang-cpp">C++</span>
+              <span class="lang lang-cpp">{{ repo.language | default: "C++" }}</span>
               <span class="sep">/</span>
-              <span>Oct 2026</span>
+              <span>{{ repo.pushed_label | default: "Oct 2026" }}</span>
             </div>
           </article>
 
@@ -165,10 +171,11 @@
             <p class="work-desc">
               Java command line tool for batch resizing and scaling images into thumbnails without a GUI in the loop.
             </p>
+            {% assign repo = site.data.github.repos["ImageThumbnailer"] %}
             <div class="work-meta">
-              <span class="lang lang-java">Java</span>
+              <span class="lang lang-java">{{ repo.language | default: "Java" }}</span>
               <span class="sep">/</span>
-              <span>Apr 2026</span>
+              <span>{{ repo.pushed_label | default: "Apr 2026" }}</span>
             </div>
           </article>
 
@@ -184,10 +191,11 @@
             <p class="work-desc">
               Early Android app exploring the Flickr REST API: image fetching, paging, and custom list views.
             </p>
+            {% assign repo = site.data.github.repos["HexeFlick"] %}
             <div class="work-meta">
-              <span class="lang lang-java">Java</span>
+              <span class="lang lang-java">{{ repo.language | default: "Java" }}</span>
               <span class="sep">/</span>
-              <span>Aug 2017</span>
+              <span>{{ repo.pushed_label | default: "Aug 2017" }}</span>
             </div>
           </article>
 
@@ -263,19 +271,19 @@
           <dl class="facts" data-reveal>
             <div class="fact">
               <dt>Public repositories</dt>
-              <dd>6</dd>
+              <dd>{{ site.data.github.public_count | default: 6 }}</dd>
             </div>
             <div class="fact">
               <dt>Private, in progress</dt>
-              <dd>13</dd>
+              <dd>{{ site.data.github.private_count | default: 13 }}</dd>
             </div>
             <div class="fact">
               <dt>Most used language</dt>
-              <dd>C++</dd>
+              <dd>{{ site.data.github.top_language | default: "C++" }}</dd>
             </div>
             <div class="fact">
-              <dt>Also working in</dt>
-              <dd class="is-text">C &middot; Python &middot; Java &middot; JS</dd>
+              <dt>Working in</dt>
+              <dd class="is-text">C++ &middot; C &middot; Python &middot; Java &middot; JS</dd>
             </div>
             <div class="fact">
               <dt>Longest-running repo</dt>
@@ -359,7 +367,7 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <span>&copy; <span id="year"></span> Juan P. Cazarez &middot; built with Jekyll, hosted on GitHub Pages</span>
+      <span>&copy; <span id="year"></span> Juan P. Cazarez &middot; built with Jekyll, hosted on GitHub Pages{% if site.data.github.generated_at %} &middot; repo data refreshed {{ site.data.github.generated_at }}{% endif %}</span>
       <a href="#">Back to top &uarr;</a>
     </div>
   </footer>

@@ -1,0 +1,49 @@
+name: Refresh repo data
+
+# Regenerates _data/github.json so stars, languages, dates and counts on the
+# site stay current without hand edits.
+#
+# Set the REPOS_TOKEN secret to a personal access token that can read the
+# account's repositories if you want private repos counted. A fine-grained
+# token with read-only "Metadata" access to all repositories is enough.
+# Without the secret the job still runs and refreshes everything public; the
+# private count keeps its previous value.
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-repo-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch repository data
+        env:
+          GITHUB_API_TOKEN: ${{ secrets.REPOS_TOKEN }}
+        run: node scripts/fetch-repo-data.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- _data/github.json; then
+            echo "Repo data unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/github.json
+          git commit -m "Refresh GitHub repo data"
+          git push
