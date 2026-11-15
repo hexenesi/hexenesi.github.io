@@ -14,14 +14,18 @@ Personal portfolio website of **Juan P. Cazarez (hexenesi)**, hosted via GitHub 
 
 ## Tech Stack
 
-- HTML5 / Vanilla CSS3 (Custom Glassmorphism Design System)
-- Google Fonts (Inter, Outfit, Fira Code)
+- HTML5 / vanilla CSS3 (editorial design system, hairline rules, no framework)
+- Vanilla JS canvas rendering — the hero and every project thumbnail are generated at runtime
+- Light / dark / system theming, persisted in `localStorage`
+- Google Fonts (Fraunces, Inter, Fira Code)
 - Hosted on GitHub Pages
 
 ## Structure
 
 - `index.html` — the single-page site (all sections live here)
 - `assets/css/styles.css` — design tokens and all styling
+- `assets/js/art.js` — Clifford attractor, Mandelbrot, ASCII and diagram renderers
+- `assets/js/main.js` — theme toggle, mobile nav, scroll reveal
 - `about.html`, `projects.html` — redirects to the matching `#` sections
 
 ## Local Development
