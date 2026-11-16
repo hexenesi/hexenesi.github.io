@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15",
+  "generated_at": "2026-11-16",
   "scope": "public+private",
   "public_count": 6,
   "private_count": 13,
@@ -21,8 +21,8 @@
     },
     "hexenesi.github.io": {
       "stars": 0,
-      "language": "HTML",
-      "pushed_at": "2026-11-15T20:14:15Z",
+      "language": "JavaScript",
+      "pushed_at": "2026-11-15T20:18:32Z",
       "pushed_label": "Nov 2026",
       "url": "https://github.com/hexenesi/hexenesi.github.io"
     },
